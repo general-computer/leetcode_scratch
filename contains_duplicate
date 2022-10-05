@@ -1,0 +1,11 @@
+defmodule Solution do
+  @spec contains_duplicate(nums :: [integer]) :: boolean
+  def contains_duplicate(nums) do
+    uniq_map = Enum.uniq(nums)
+    if length(uniq_map) < length(nums) do
+      true
+    else
+      false
+    end
+  end
+end
